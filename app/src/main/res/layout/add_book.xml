@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/row_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAddBookName"
+            android:layout_width="0dp"
+            style="@style/inputText"
+            android:text=""
+            android:background="@drawable/edittext_back"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:gravity="right|center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rowTitle"
+            android:text="اسم:" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAddBookWriter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_back"
+            android:layout_weight="1"
+            style="@style/inputText"
+            android:gravity="right|center_vertical"
+            android:inputType="textPersonName"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rowTitle"
+            android:text="نویسنده:" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAddBookPublisher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_back"
+            style="@style/inputText"
+            android:gravity="right|center_vertical"
+            android:inputType="textPersonName"
+             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rowTitle"
+            android:text="ناشر:" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAddBookCount"
+            style="@style/inputText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_back"
+            android:inputType="numberDecimal"
+            android:gravity="right|center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rowTitle"
+            android:text="تعداد:" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etAddBookYear"
+            style="@style/inputText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/edittext_back"
+            android:inputType="numberDecimal"
+            android:gravity="right|center_vertical" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/rowTitle"
+            android:text="سال:" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btCancelAddBook"
+            style="@style/btnText"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="#ff0000"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btOkAddBook"
+            style="@style/btnText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add" />
+
+    </LinearLayout>
+
+</LinearLayout>

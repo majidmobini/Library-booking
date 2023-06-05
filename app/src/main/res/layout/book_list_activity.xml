@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/page"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right|center_vertical"
+            android:layout_height="50dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/tvSearchBook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:queryHint="جستجوی کتاب"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_marginRight="16dp"
+                android:id="@+id/addBook"
+                android:src="@drawable/baseline_add_circle_outline_white_48dp"
+                android:background="#00000000"
+                android:tint="#ffffff"
+                android:scaleType="fitCenter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="@string/bookList"
+            android:gravity="center"
+            style="@style/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/bookRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

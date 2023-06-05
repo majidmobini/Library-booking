@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/page"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@drawable/buttom_normal_back"
+        android:text="@string/buyData" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btOkbuy"
+            style="@style/btnText"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="24dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

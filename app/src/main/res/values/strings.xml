@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">مدیریت کتابخانه</string>
+    <string name="bookList">لیست کتاب ها</string>
+    <string name="memeberList">لیست اعضا</string>
+    <string name="rentedBooks">لیست کتابهای امانت داده شده</string>
+    <string name="addBook">افزودن کتاب</string>
+    <string name="addMemeber">افزودن اعضا</string>
+    <string name="searccBook">جستجوی کتاب</string>
+    <string name="addRent">امانت کتاب</string>
+    <string name="backup">پشتیبان گیری</string>
+    <string name="importData">بازگردانی فایل</string>
+    <string name="ok">تایید</string>
+    <string name="add">افزودن</string>
+    <string name="cancel">لغو</string>
+    <string name="buyData">از این به بعد شما قادر خواهید بود تا به تعداد دلخواه کتاب ثبت کنید، کتاب امانت دهید و از اطلاعات خود پشتیبان گیری کنید.\n با تشکر از خرید شما . </string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ict.librarybooking">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR"></uses-permission>
+
+    <queries>
+        <package android:name="com.farsitel.bazaar" />
+        <intent>
+            <action android:name="ir.cafebazaar.pardakht.InAppBillingService.BIND" />
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Starter" android:theme="@style/splashScreenTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BookListActivity"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name="com.ict.dialogs.BuyDialog"/>
+        <activity android:name=".RentListActivity"/>
+        <activity android:name=".MemberListActivity"/>
+
+
+
+        <provider
+            android:authorities="com.ict.librarybooking"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path"/>
+        </provider>
+
+    </application>
+
+</manifest>

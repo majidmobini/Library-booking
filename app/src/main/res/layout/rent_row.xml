@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:background="@drawable/row_back"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imMore"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/more"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+
+                <TextView
+                    android:id="@+id/tvRentBookName"
+                    style="@style/rowName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:layout_weight="1"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    style="@style/rowTitle"
+                    android:layout_height="wrap_content"
+                    android:text="اسم کتاب:"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/tvRentMemberName"
+                    style="@style/rowName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    style="@style/rowTitle"
+                    android:layout_height="wrap_content"
+                    android:text="امانت گیرنده:"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/tvRentDate"
+                    style="@style/rowName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="right|center_vertical"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    style="@style/rowTitle"
+                    android:layout_height="wrap_content"
+                    android:text="تاریخ:"
+                    android:textAlignment="textEnd" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

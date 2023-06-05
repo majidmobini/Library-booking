@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center|left"
+            android:src="@drawable/logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="36dp"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btBookList"
+            style="@style/btnText"
+
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/bookList" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btMemberList"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/memeberList" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRented"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/rentedBooks" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAddbook"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/addBook" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAddMember"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/addMemeber" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btRentBook"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/addRent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btExport"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/backup" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btImport"
+            style="@style/btnText"
+            android:layout_marginTop="8dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttoms_back"
+            android:text="@string/importData" />
+
+
+    </LinearLayout>
+</LinearLayout>

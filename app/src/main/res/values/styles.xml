@@ -1,0 +1,44 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="splashScreenTheme" parent="AppTheme"  android:scaleType="fitXY">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+
+    <style name="btnText" parent="AppTheme">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/button_text_color</item>
+    </style>
+    <style name="rowTitle" parent="AppTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#555555</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+    <style name="rowName" parent="AppTheme">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="titleText" parent="AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_marginLeft">0dp</item>
+    </style>
+
+    <style name="inputText" parent="AppTheme">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+</resources>
